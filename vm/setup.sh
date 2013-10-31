@@ -67,7 +67,16 @@ EOF
 
 # Web server for the builds.
 sudo apt-get install -y apache2
-sudo apt-get install pkg-config
+sudo apt-get install -y pkg-config
+sudo apt-get install -y libgtk2.0-dev
+sudo apt-get install -y libdbus-1-dev
+sudo apt-get install -y libdrm-dev
+sudo apt-get install -y libgconf2-dev
+sudo apt-get install -y libgnome-keyring-dev
+sudo apt-get install -y libpci-dev
+sudo apt-get install -y libudev-dev
+
+
 sudo mkdir -p /etc/apache2/sites-available
 sudo tee /etc/apache2/sites-available/001-crbuilds.conf > /dev/null <<EOF
 <VirtualHost *:80>
