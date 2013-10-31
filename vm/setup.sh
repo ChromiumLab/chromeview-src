@@ -67,6 +67,7 @@ EOF
 
 # Web server for the builds.
 sudo apt-get install -y apache2
+sudo apt-get install pkg-config
 sudo mkdir -p /etc/apache2/sites-available
 sudo tee /etc/apache2/sites-available/001-crbuilds.conf > /dev/null <<EOF
 <VirtualHost *:80>
